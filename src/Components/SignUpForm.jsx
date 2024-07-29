@@ -70,14 +70,14 @@ const TextBlock = ({ handleIsOpen }) => {
             name="email"
             id="email"
             placeholder="email@company.com"
-            className="rounded border-[Grey] border py-3 px-1 cursor-pointer
+            className={`rounded border-[Grey] border py-3 px-1 cursor-pointer
           xxs:text-xs xs:text-sm
           xxs:placeholder:text-xs
           xs:placeholder:text-sm
           xxs:w-full
           outline-none
-          ${ErrorMessage && `bg-rose-100 border-rose-400`}
-          "
+          ${ErrorMessage && `bg-rose-200 border-rose-400`}
+          `}
           />
           <button
             type="submit"
