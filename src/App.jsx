@@ -3,7 +3,7 @@ import { useState } from "react";
 import Hero from "./Components/Hero";
 import SuccessState from "./Components/SuccessState";
 const App = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   function handleIsOpen() {
     setIsOpen((prev) => !prev);
   }
