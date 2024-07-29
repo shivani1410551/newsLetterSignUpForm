@@ -51,7 +51,7 @@ const TextBlock = ({ handleIsOpen }) => {
           console.log(value.email);
           resetForm();
         }}
-        validateSchema={formSchema}
+        validationSchema={formSchema}
       >
         <Form action="" className="space-y-3 xxs:mt-2">
           {" "}
