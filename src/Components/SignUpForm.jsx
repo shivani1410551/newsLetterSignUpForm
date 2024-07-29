@@ -52,6 +52,7 @@ const TextBlock = ({ handleIsOpen }) => {
           resetForm();
         }}
         validationSchema={formSchema}
+        onClick={handleIsOpen}
       >
         <Form action="" className="space-y-3 xxs:mt-2">
           {" "}
@@ -59,6 +60,10 @@ const TextBlock = ({ handleIsOpen }) => {
             <label className="xxs:text-xs xs:text-sm font-bold -mb-1">
               Email address
             </label>
+            <ErrorMessage
+              name="email"
+              render={(msg) => <div className="error">{msg}</div>}
+            />
           </article>
           <Field
             type="text"
@@ -74,15 +79,10 @@ const TextBlock = ({ handleIsOpen }) => {
           ${ErrorMessage && `bg-rose-100 border-rose-400`}
           "
           />
-          <ErrorMessage
-            name="email"
-            className="text-red-400 sm:text-xs md:text-base py-2"
-          />
           <button
             type="submit"
             className="bg-DarkSlateGrey rounded text-white xxs:w-full my-2 py-3 px-1  font-bold xxs:text-xs xs:text-sm bg-gradient-to-r hover:from-pink-500 hover:to-orange-500 transition-colors
         "
-            onClick={handleIsOpen}
           >
             {" "}
             Subscribe to monthly newsletter
